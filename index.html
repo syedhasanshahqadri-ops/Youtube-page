@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .header {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .menu {
+            font-size: 25px;
+            margin-right: 25px;
+        }
+
+        .logo {
+            font-size: 21px;
+            font-weight: bold;
+            width: 200px;
+        }
+
+        .youtube {
+            background: red;
+            color: white;
+            padding: 5px 8px;
+            border-radius: 7px;
+            font-size: 12px;
+        }
+
+        .search {
+            display: flex;
+            width: 600px;
+            height: 35px;
+        }
+
+        .search input {
+            width: 100%;
+            border: 1px solid #ccc;
+            padding: 10px;
+            font-size: 15px;
+        }
+
+        .search button {
+            width: 60px;
+            border: 1px solid #ccc;
+            background: #eee;
+        }
+
+        .right {
+            margin-left: auto;
+            font-size: 20px;
+        }
+
+        .profile {
+            background: purple;
+            color: white;
+            border-radius: 50%;
+            padding: 10px;
+            margin-left: 20px;
+        }
+
+        .side {
+            width: 220px;
+            position: fixed;
+            top: 60px;
+            bottom: 0;
+            border-right: 1px solid #ddd;
+            padding-top: 10px;
+        }
+
+        .side div {
+            padding: 15px 25px;
+            font-size: 14px;
+        }
+
+        .side div:hover {
+            background: #eee;
+        }
+
+        .home {
+            background: #ddd;
+            color: red;
+        }
+
+        .side hr {
+            border: 0;
+            border-top: 1px solid #ddd;
+        }
+
+        .main {
+            margin-left: 220px;
+        }
+
+        .buttons {
+            padding: 10px 30px;
+            border-bottom: 1px solid #ddd;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .buttons button {
+            border: 1px solid #ddd;
+            background: #f5f5f5;
+            padding: 9px 15px;
+            border-radius: 20px;
+            margin-right: 8px;
+        }
+
+        .buttons .all {
+            background: black;
+            color: white;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            padding: 25px;
+        }
+
+        .card {
+            font-size: 14px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 145px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            font-size: 15px;
+            margin: 10px 0 5px;
+        }
+
+        .card p {
+            color: gray;
+            margin: 5px 0;
+            font-size: 13px;
+        }
+
+        (max-width: 900px) {
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .search {
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+
+        <div class="menu">☰</div>
+
+        <div class="logo">
+            <span class="youtube">▶</span>
+            YouTube
+        </div>
+
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <button>🔍</button>
+        </div>
+
+        <div class="right">
+            🔔
+            <span class="profile">C</span>
+        </div>
+
+    </div>
+
+
+    <div class="side">
+
+        <div class="home">&nbsp; Home</div>
+
+        <div>◉ &nbsp; Explore</div>
+
+        <div>▶ &nbsp; Subscriptions</div>
+
+        <hr>
+
+        <div>▣ &nbsp; Library</div>
+
+        <div>◷ &nbsp; History</div>
+
+        <div>▶ &nbsp; Your videos</div>
+
+        <div>◷ &nbsp; Watch later</div>
+
+        <div>👍 &nbsp; Liked videos</div>
+
+        <hr>
+
+        <div><b>SUBSCRIPTIONS</b></div>
+
+        <div>🎵 &nbsp; Music</div>
+
+        <div>🏆 &nbsp; Sports</div>
+
+        <div>🎮 &nbsp; Gaming</div>
+
+        <div>📰 &nbsp; News</div>
+
+    </div>
+
+
+    <div class="main">
+
+        <div class="buttons">
+            <button class="all">All</button>
+            <button>Music</button>
+            <button>Mixes</button>
+            <button>User interface design</button>
+            <button>Nollywood</button>
+            <button>Logos</button>
+            <button>Graphic design</button>
+            <button>Website</button>
+            <button>Computer Science</button>
+        </div>
+
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600">
+                <h3>4-Year Medical Doctor Degree in UK</h3>
+                <p>Ready to start med school?</p>
+                <p>AUC School of Medicine</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?w=600">
+                <h3>UI Design Trends 2021</h3>
+                <p>DesignSense</p>
+                <p>521K views • 5 months ago</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600">
+                <h3>Simi - Complete Me</h3>
+                <p>X3M Music</p>
+                <p>3.7M views • 3 years ago</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=600">
+                <h3>Data Analyst Career Switch</h3>
+                <p>The Work Life Man</p>
+                <p>56K views • 1 month ago</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600">
+                <h3>STUBBORN BILLIONAIRES Complete</h3>
+                <p>OGUEZU Nw</p>
+                <p>1.2M views • 2 weeks ago</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600">
+                <h3>Linda Osifo and Oklara</h3>
+                <p>The Ndani TV Show</p>
+                <p>234K views • 1 year ago</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600">
+                <h3>Designing a Complete Brand Identity</h3>
+                <p>Graphic Design</p>
+                <p>89K views • 8 months ago</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600">
+                <h3>7 Mistakes Ladies Make</h3>
+                <p>Kinglsey Okonkwo</p>
+                <p>310K views • 1 year ago</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
